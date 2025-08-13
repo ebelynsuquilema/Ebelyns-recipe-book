@@ -221,9 +221,6 @@ function main() {
     displaySummary(generateSummary());
 }
 
-// Start program
-// main(); // Commented out to avoid interference with web page
-
 // 6. Test Cases
 function runTests() {
     console.log("\n=== Running Tests ===");
@@ -259,11 +256,6 @@ function runTests() {
     
 }
 
-
-// Uncomment to run tests
-// runTests();
-
-// 7. UI Interaction Functions for HTML
 
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
@@ -384,7 +376,6 @@ function updateStatistics() {
     `;
 }
 
-// Initialize the page when it loads
 document.addEventListener('DOMContentLoaded', function() {
     displayRecipeGrid(recipeData.records);
     updateStatistics();
